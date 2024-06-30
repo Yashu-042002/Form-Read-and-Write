@@ -1,0 +1,30 @@
+<body>
+  <%- include('header.ejs') %>
+  <div class="hero-banner-wrapper">
+    <div class="hero-side-banner">
+      <div class="hero-banner-content">
+        <h1 id="web-heading">Welcome to <span>Kurbs</span></h1>
+        <p id="web-heading-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          necessitatibus explicabo qui voluptatem nobis temporibus aut modi,
+          iste harum? Atque quas consectetur, quibusdam illum alias
+          reprehenderit labore ab molestias, ratione similique saepe.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <h2>Sign-in</h2>
+      <form action="/login" method="post">
+        <label for="#user-name">Username:</label>
+        <input type="text" name="username" id="user-name" required/>
+        <label for="#user-pass">Password:</label>
+        <input type="password" name="password" id="user-pass" required/>
+        <input type="submit" value="Login" />
+      </form>
+      <form action="/signup" action="post">
+        <label for="signup-area">New Account? </label><input type="submit" value="Sign-up">
+    </form>
+    </div>
+  </div>
+</body>
